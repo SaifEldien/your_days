@@ -32,16 +32,6 @@ The project follows a **Feature-Driven Clean Architecture**. This ensures that t
     * **Logic:** State Management using **Cubit (Bloc)**.
     * **UI:** Feature-specific Screens and Widgets.
 
----
-
-## 📸 App Preview
-*(Add your actual screenshots here to showcase the UI!)*
-
-| Daily List | Add Highlight | Profile View |
-| :---: | :---: | :---: |
-| ![List](https://via.placeholder.com/200x400) | ![Add](https://via.placeholder.com/200x400) | ![Profile](https://via.placeholder.com/200x400) |
-
----
 
 ## 🛠️ Tech Stack & Dependencies
 
