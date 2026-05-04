@@ -1,0 +1,36 @@
+build/
+android/app/build/
+android/.gradle/
+ios/Flutter/Generated.framework/
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+*.db
+*.sqlite
+.env
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
+.cxx/
+
+# Remember to never publicly share your keystore.
+# See https://flutter.dev/to/reference-keystore
+key.properties
+**/*.keystore
+**/*.jks
+
+# Firebase / Google Services configuration files
+# Android
+android/app/google-services.json
+
+# iOS
+ios/Runner/GoogleService-Info.plist
+
+# Firebase debug/config files
+.firebaserc
+firebase.json

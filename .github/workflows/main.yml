@@ -1,0 +1,41 @@
+name: Build macOS Artifacts
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build_macos:
+    name: Generate .app Bundle
+    runs-on: macos-latest # Required for .app files
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          architecture: x64
+
+      - name: Install Dependencies
+        run: flutter pub get
+
+      - name: Enable macOS Build
+        run: flutter config --enable-macos-desktop
+
+      - name: Build macOS App
+        # Using --release for a high-performance production-ready file
+        run: flutter build macos --release
+
+      - name: Compress .app for Upload
+        # .app is actually a folder, so we zip it for easy downloading
+        run: |
+          cd build/macos/Build/Products/Release
+          zip -r YourDays_macOS.zip Your_Days.app
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YourDays-macOS-Bundle
+          path: build/macos/Build/Products/Release/YourDays_macOS.zip

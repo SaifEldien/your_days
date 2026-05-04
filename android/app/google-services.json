@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "23038975146",
+    "project_id": "mydays-f3d89",
+    "storage_bucket": "mydays-f3d89.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23038975146:android:1ff66808f8c447fbe384d3",
+        "android_client_info": {
+          "package_name": "com.apps.my_days"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23038975146-64vuah14a60vopc1060flpsjf1p1989a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.my_days",
+            "certificate_hash": "6b724aa9555896a32d06adf05d1163adaad756ff"
+          }
+        },
+        {
+          "client_id": "23038975146-ja5gcjplof3ul175f4fjo4um269cqtuj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.my_days",
+            "certificate_hash": "913aed15a7bf8e20b90d160a819ed644638f9dde"
+          }
+        },
+        {
+          "client_id": "23038975146-m3sc907an86mcmp0jieci9otsbn3jt99.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.my_days",
+            "certificate_hash": "f18725e5215233afab78b9e9639f76c0dd9459d8"
+          }
+        },
+        {
+          "client_id": "23038975146-4e2fq5tuf9msd1lbdfmqt1tsege42m30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgINHQPYAkPTcaBgfLJ2AqwJpq09CJRMM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23038975146-2s9bnttm8nhk639ushdqeeaurajsv455.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
