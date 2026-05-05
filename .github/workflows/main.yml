@@ -29,10 +29,10 @@ jobs:
         run: flutter build macos --release
 
       - name: Compress .app for Upload
-        # .app is actually a folder, so we zip it for easy downloading
+      # استخدام *.app يضمن ضغط التطبيق مهما كان اسمه الناتج
         run: |
-          cd build/macos/Build/Products/Release
-          zip -r YourDays_macOS.zip Your_Days.app
+         cd build/macos/Build/Products/Release
+         zip -r YourDays_macOS.zip *.app
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
